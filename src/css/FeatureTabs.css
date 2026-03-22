@@ -1,0 +1,131 @@
+/* FeatureTabs.css */
+
+.feature-container {
+  width: min(90%, 1100px);
+  margin: 2rem auto;
+  background: #f8f8f8;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* TABS */
+.feature-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background: #e6d8b5;
+}
+
+.feature-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1rem 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  border: 0;
+  border-right: 1px solid #d8c7a2;
+  background: transparent;
+  color: #1f2937;
+}
+
+.feature-tab:last-child {
+  border-right: 0;
+}
+
+.feature-tab p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.feature-tab:hover {
+  background: #f1e4c4;
+}
+
+.feature-tab.active {
+  background: #ffffff;
+  box-shadow: inset 0 -3px 0 #f5b400;
+}
+
+.feature-tab-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* CONTENT */
+.feature-content {
+  padding: 1.75rem;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.feature-content h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.45rem;
+  color: #111827;
+}
+
+.feature-content p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.feature-btn {
+  margin-top: 1.1rem;
+  background: #f5b400;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.feature-btn:hover {
+  filter: brightness(0.95);
+}
+
+@media (max-width: 900px) {
+  .feature-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-tab:nth-child(2n) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .feature-container {
+    width: calc(100% - 1.25rem);
+    margin: 1rem auto;
+    border-radius: 12px;
+  }
+
+  .feature-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-tab {
+    border-right: 0;
+    border-bottom: 1px solid #d8c7a2;
+    padding: 0.9rem 0.75rem;
+  }
+
+  .feature-tab:last-child {
+    border-bottom: 0;
+  }
+
+  .feature-content {
+    padding: 1.2rem;
+  }
+
+  .feature-content h2 {
+    font-size: 1.2rem;
+  }
+}

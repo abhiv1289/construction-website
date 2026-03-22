@@ -1,2 +1,55 @@
 @import "tailwindcss";
 
+.container {
+  position: relative;
+  height: 300px;
+}
+
+/* Top color */
+.top-bg {
+  height: 70%;
+  background: black; /* dark */
+}
+
+/* Bottom color */
+.bottom-bg {
+  height: 30%;
+  background: gray; /* light */
+}
+/* Top color */
+.top-bg1 {
+  height: 70%;
+  background: burlywood; /* dark */
+}
+
+/* Bottom color */
+.bottom-bg1 {
+  height: 30%;
+  background: gray; /* light */
+}
+
+/* Floating div */
+.floating-card {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: transparent;   /* ✅ change this */
+  padding: 30px;
+  width: 70%;
+
+  border-radius: 10px;
+  box-shadow: none;          /* optional: remove shadow */
+
+  z-index: 10;
+}
+
+.sub-slider {
+  background-color: transparent;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
