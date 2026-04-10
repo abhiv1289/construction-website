@@ -7,6 +7,9 @@ import Socials from '../components/Socials';
 import InfoCards from '../components/InfoCards';
 import HeroSection from '../components/HeroSection';
 import LearnMoreButton from '../components/LearnMoreButton';
+import HeroSectionSecond from '../components/HeroSectionSecond';
+import Testimonials from '../components/Testimonials';
+import ContactSection from '../components/ContactSection';
 
 
 export default function Homepage() {
@@ -39,43 +42,19 @@ export default function Homepage() {
         <LearnMoreButton/>
       </div>
               </div>
+              <HeroSectionSecond/>
+              <Testimonials/>
+              <ContactSection/>
 
-            <FeatureTabs/>
+            {/* <FeatureTabs/> */}
             <div className="container">
 
-  {/* Background colors */}
-  <div className="top-bg"></div>
-  <div className="bottom-bg"></div>
-
-  {/* Floating content */}
-  <div className="floating-card">
-    <div>
-        <span className='text-white text-2xl font-extrabold'>Curated Offers For You</span>
-    </div>
-    <div className='sub-slider'>
-        <SubSlider/>
-    </div>
-  </div>
-
+  
 </div>
 
-            <div className="container mt-5">
 
-  {/* Background colors */}
-  <div className="top-bg1"></div>
-  <div className="bottom-bg1"></div>
 
-  {/* Floating content */}
-  <div className="floating-card">
-    <div>
-        <span className='text-white text-2xl font-extrabold'>Curated Offers For You</span>
-    </div>
-    <div className='sub-slider'>
-        <SubSlider/>
-    </div>
-  </div>
 
-</div>
 <Footer/>
         </div>
     );
